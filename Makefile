@@ -4,11 +4,11 @@ BUILD_DIR = Build
 
 # All Source code files
 SRC = main.c\
-src/port1.c\
+src/port1.c
 
 
 # All header file paths
-INC = -I inc
+INC = -Iinc
 
 # Find out the OS and configure the variables accordingly
 ifdef OS	# All configurations for Windwos OS
