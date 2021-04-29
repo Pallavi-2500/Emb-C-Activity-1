@@ -1,3 +1,3 @@
-# Embedded C- Activity 1
+# Car Seat heater- Embedded C
 
-## Dashboard indication when a passenger is seated and turns on the heater
+
