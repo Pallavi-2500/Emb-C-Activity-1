@@ -1,6 +1,10 @@
 DOXYFILE_NAME = SeatHeatControl
-all:
+BUILD_FILE = html
+
+FixPath = $(subst /,\,$1)
+
+doc:
 	doxygen ./$(DOXYFILE_NAME)
 
 clean:
-	rm -rf html
+	rm -rf $(call FixPath,$(BUILD_FILE)/*)
