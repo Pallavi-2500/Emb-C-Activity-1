@@ -25,9 +25,11 @@ int main(void)
 {
     Buttons_LED_Init(); //Initialise the button input registers
     Init_ADC(); //Initialise the ADC
-    void Act_3(uint16_t x); //Initialise the registers for TIMER1 as fast PWM
+    Act_3(); //Initialise duty cycle in PWM according to i/p ADC value
     UART_init(103); //Initialise UART registers
+    
     uint16_t x;
+    char val;
 
     /**
      * @brief Infinite loop to run the microcontroller
@@ -42,15 +44,18 @@ int main(void)
                 _delay_ms(20);
                 LED_SET; //make 0th bit of port B as 1, makes led glow
                 x = Read_ADC(0);
-                Act_3(x);
-                _delay_ms(20);
+                val= Act_3(x);
+                UART_write(val);
+                _delay_ms(200);
                 
             }
             else
             {
                 _delay_ms(20);
-                OCR1A = 0; //make PWM output 0 if switch is off
                 LED_CLR; // make led off
+                OCR1A = 0; //make PWM output 0 if switch is off
+                val=0;
+                UART_write(val);
             }
         }
         else
@@ -58,6 +63,8 @@ int main(void)
                 
                 LED_CLR; //make led off
                 OCR1A = 0; //make PWM output 0 if both switches are off
+                val=0;
+                UART_write(val);
                 _delay_ms(20);
         }
     }

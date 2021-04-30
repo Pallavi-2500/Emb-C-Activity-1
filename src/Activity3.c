@@ -22,28 +22,32 @@ void timer()
     DDRB |=(1<<PB1);
 }
 
-void Act_3(uint16_t x)
+char Act_3(uint16_t x)
 {
-    timer();
+    char disp_temp;
     if( x>=0 && x<=200){
             OCR1A = PWM_AT_20_PERCENT;//PWM of Duty cycle 20%
+            disp_temp=20;
             _delay_ms(200);
         }
         else if(x>=210 && x<=500){
              OCR1A = PWM_AT_40_PERCENT;//PWM of Duty cycle 40%
+             disp_temp=25;
             _delay_ms(200);
         }
         else if(x>=510 && x<=700){
              OCR1A = PWM_AT_70_PERCENT;//PWM of Duty cycle 70%
+             disp_temp=29;
             _delay_ms(200);
         }
         else if(x>=710 && x<=1024){
              OCR1A = PWM_AT_95_PERCENT;//PWM of Duty cycle 95%
+             disp_temp=33;
             _delay_ms(200);
         }
         else{
             OCR1A=0;
             _delay_ms(200);
         }
-
+        return disp_temp;
 }

@@ -32,6 +32,6 @@ void timer();
  * 
  * @param[in] pwm The ADC value from activity2
  */
-void Act_3(uint16_t x);
+char Act_3(uint16_t x);
 
 #endif 
