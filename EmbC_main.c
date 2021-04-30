@@ -25,9 +25,9 @@ int main(void)
 {
     Buttons_LED_Init(); //Initialise the button input registers
     Init_ADC(); //Initialise the ADC
-    Act_3(); //Initialise duty cycle in PWM according to i/p ADC value
+    char Act_3(uint16_t x); //Initialise duty cycle in PWM according to i/p ADC value
     UART_init(103); //Initialise UART registers
-    
+
     uint16_t x;
     char val;
 
