@@ -15,16 +15,16 @@ This project is basically broken into 4 separate modules. The functionality of e
 ## Simulation
 
 ### Activity 1
-![](Simulation/Activity1.gif)
+<img src = "Simulation/Activity1.gif" width= "600" >
 
 ### Activity 2
-
+<img src = "Simulation/Activity2.gif" width= "700" >
 
 ### Activity 3
-
+<img src = "Simulation/Activity3.gif" width= "900" >
 
 ### Activity 4
-
+<img src = "Simulation/Activity4.gif" width= "900" >
 
 ## Code Quality and Continuous integration 
 
