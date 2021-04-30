@@ -1,7 +1,7 @@
 /**
  * @file Activity1.h
  * @author Pallavi Sharma (Pallavisharma0025@gmail.com)
- * @brief This file contains the headers for ativity1.c file
+ * @brief This file contains the headers for Activity1.c file
  * @version 0.1
  * @date 2021-04-24
  * 

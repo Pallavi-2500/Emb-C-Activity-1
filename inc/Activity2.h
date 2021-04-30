@@ -1,7 +1,7 @@
 /**
  * @file Activity2.h
  * @author Pallavi Sharma (Pallavisharma0025@gmail.com)
- * @brief This file is a header file for Activity2.h file
+ * @brief This file is a header file for Activity2.c file
  * @version 0.1
  * @date 2021-04-27
  * 
