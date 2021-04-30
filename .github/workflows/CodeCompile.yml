@@ -1,4 +1,4 @@
- name: Compile-Linux
+name: Linux-Compile
 
 on:
   push:
