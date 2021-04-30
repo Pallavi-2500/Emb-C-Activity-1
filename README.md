@@ -1,4 +1,5 @@
-# Car Seat heater- Embedded C
+# Car Seat heater- Embedded C- Pallavi Sharma (257471)
+
 
 ## Project Description
 
@@ -15,6 +16,6 @@ This project is basically broken into 4 separate modules. The functionality of e
 
 | Build | Codacy | CppCheck |
 |:-------:|:-------:|:------:|
-| | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/6ba094bda54e4ce19e67160b1e349322)](https://www.codacy.com/gh/Pallavi-2500/Emb-C-Activity-1/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Pallavi-2500/Emb-C-Activity-1&amp;utm_campaign=Badge_Grade) | [![Cppcheck](https://github.com/Pallavi-2500/Emb-C-Activity-1/actions/workflows/CodeQuality.yml/badge.svg)](https://github.com/Pallavi-2500/Emb-C-Activity-1/actions/workflows/CodeQuality.yml) | 
+| [![Linux-Compile](https://github.com/Pallavi-2500/Emb-C-Activity-1/actions/workflows/CodeCompile.yml/badge.svg)](https://github.com/Pallavi-2500/Emb-C-Activity-1/actions/workflows/CodeCompile.yml) | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/6ba094bda54e4ce19e67160b1e349322)](https://www.codacy.com/gh/Pallavi-2500/Emb-C-Activity-1/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Pallavi-2500/Emb-C-Activity-1&amp;utm_campaign=Badge_Grade) | [![Cppcheck](https://github.com/Pallavi-2500/Emb-C-Activity-1/actions/workflows/CodeQuality.yml/badge.svg)](https://github.com/Pallavi-2500/Emb-C-Activity-1/actions/workflows/CodeQuality.yml) | 
 
 
