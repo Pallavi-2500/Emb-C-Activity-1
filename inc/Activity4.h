@@ -1,7 +1,7 @@
 /**
- * @file SerialCommunicationUART.h
+ * @file Activity4.h
  * @author Pallavi Sharma (Pallavisharma0025@gmail.com)
- * @brief Ahis file is a header file for Activity4.h file
+ * @brief This file is a header file for Activity4.c file
  * @version 0.1
  * @date 2021-04-29
  * 
@@ -16,19 +16,43 @@
 #include <util/delay.h>
 
 /**
- * @brief Defining registers and pins as macros
+ * @brief Macro which sets Baud low
  * 
  */
-#define SetBaudLow (UBRR0L=ubrr_value)
-#define SetBaudHigh (UBRR0H=(ubrr_value>>8)&0x00ff)
-#define SetCharBits (UCSR0C=(1<<UMSEL00)|(1<<UCSZ01)|(1<<UCSZ00))
-#define EnableReceiverAndTransmitter (UCSR0B=(1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0))
-#define ReadOrWriteData (UDR0)
-#define WaitForTransmissionReady (!(UCSR0A&(1<<UDRE0)))
-
+#define BAUD_LOW (UBRR0L=ubrr_value)
 
 /**
- * @brief initialize the USART registers
+ * @brief Macro which sets Baud high
+ * 
+ */
+#define BAUD_HIGH (UBRR0H=(ubrr_value>>8)&0x00ff)
+
+/**
+ * @brief Macro to set the char data
+ * 
+ */
+#define SET_CHAR (UCSR0C=(1<<UMSEL00)|(1<<UCSZ01)|(1<<UCSZ00))
+
+/**
+ * @brief Macro to enable Transmitter and Receiver
+ * 
+ */
+#define ENABLE_Rx_Tx (UCSR0B=(1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0))
+
+/**
+ * @brief Macro to Read/Write the data
+ * 
+ */
+#define DATA_ReadWrite (UDR0)
+
+/**
+ * @brief Macro to wait until Transmitter is ready
+ * 
+ */
+#define WAIT_Tx (!(UCSR0A&(1<<UDRE0)))
+
+/**
+ * @brief Function to initialize UART
  * 
  * @param ubrr_value Baud rate
  */
@@ -36,10 +60,10 @@ void UART_init(uint16_t ubrr_value);
 
 
 /**
- * @brief To write data through serial transmission
+ * @brief Funtion which writes data through serial transmission
  * 
- * @param data input data to be transmitted
+ * @param val Input data 
  */
-void WriteCharUSART(char data);
+void UART_write(char val);
 
 #endif //activity4.h

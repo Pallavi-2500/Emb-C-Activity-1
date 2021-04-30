@@ -17,8 +17,8 @@
 
 void timer()
 {
-    TCCR1A |= (1<<COM1A1)|(1<<WGM11)|(1<<WGM10);
-    TCCR1B |= (1<<WGM12)|(1<<CS11)|(1<<CS10);
+    TCCR1A |= (1<<COM1A1)|(1<<WGM11)|(1<<WGM10); //Set Timer 1 for PWM
+    TCCR1B |= (1<<WGM12)|(1<<CS11)|(1<<CS10);//Prescale timer1 for 64 and wave generation mode for 10bit digital input
     DDRB |=(1<<PB1);
 }
 
@@ -26,19 +26,19 @@ void Act_3(uint16_t x)
 {
     timer();
     if( x>=0 && x<=200){
-            OCR1A = PWM_AT_20_PERCENT;
+            OCR1A = PWM_AT_20_PERCENT;//PWM of Duty cycle 20%
             _delay_ms(200);
         }
         else if(x>=210 && x<=500){
-             OCR1A = PWM_AT_40_PERCENT;
+             OCR1A = PWM_AT_40_PERCENT;//PWM of Duty cycle 40%
             _delay_ms(200);
         }
         else if(x>=510 && x<=700){
-             OCR1A = PWM_AT_70_PERCENT;
+             OCR1A = PWM_AT_70_PERCENT;//PWM of Duty cycle 70%
             _delay_ms(200);
         }
         else if(x>=710 && x<=1024){
-             OCR1A = PWM_AT_95_PERCENT;
+             OCR1A = PWM_AT_95_PERCENT;//PWM of Duty cycle 95%
             _delay_ms(200);
         }
         else{

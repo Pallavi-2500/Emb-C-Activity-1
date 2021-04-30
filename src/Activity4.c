@@ -10,22 +10,23 @@
  */
 
 #include <avr/io.h>
+#include <util/delay.h>
 #include "Activity4.h"
 
 void UART_init(uint16_t ubrr_value)
 {
-    SetBaudLow;
-    SetBaudHigh;
-    SetCharBits;
-    EnableReceiverAndTransmitter;
+    BAUD_LOW; // Set Baud rate low
+    BAUD_HIGH;// Set Baud rate high
+    SET_CHAR; // Set data bits
+    ENABLE_Rx_Tx; // Enable Transmitter and Receiver
 }
 
 
-void WriteCharUSART(char data)
+void UART_write(char val)
 {
-    while(WaitForTransmissionReady)
+    while(WAIT_Tx)
     {
         //Do nothing
     }
-    ReadOrWriteData=data;
+    DATA_ReadWrite=val;
 }
