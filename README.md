@@ -28,7 +28,7 @@ This project is basically broken into 4 separate modules. The functionality of e
 ### Car seat-heater System - ON
 <img src = "Simulation/ON.gif" width= "900" >
 
-### Car seat-heater System - ON
+### Car seat-heater System - OFF
 <img src = "Simulation/Off.gif" width= "900" >
 
 ## Code Quality and Continuous integration 
