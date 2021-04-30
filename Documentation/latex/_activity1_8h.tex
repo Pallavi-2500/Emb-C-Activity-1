@@ -1,0 +1,61 @@
+\hypertarget{_activity1_8h}{}\doxysection{inc/\+Activity1.h File Reference}
+\label{_activity1_8h}\index{inc/Activity1.h@{inc/Activity1.h}}
+
+
+This file contains the headers for ativity1.\+c file.  
+
+
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_activity1_8h_a916128c66228f04bfe04c69a5bc5a322}\label{_activity1_8h_a916128c66228f04bfe04c69a5bc5a322}} 
+\#define \mbox{\hyperlink{_activity1_8h_a916128c66228f04bfe04c69a5bc5a322}{LED\+\_\+\+OUT}}~DDRB$\vert$=(1$<$$<$PB0)
+\begin{DoxyCompactList}\small\item\em A macro to set 0th bit of PORTB as output. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_activity1_8h_a068ee9901b7b0daa34436f44a09270b7}\label{_activity1_8h_a068ee9901b7b0daa34436f44a09270b7}} 
+\#define \mbox{\hyperlink{_activity1_8h_a068ee9901b7b0daa34436f44a09270b7}{BUTTON\+\_\+\+IN}}~DDRB\&=$\sim$(1$<$$<$PB6)
+\begin{DoxyCompactList}\small\item\em A macro to set 6th bit of PORTB as input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_activity1_8h_a521e8bd1d48f082693027eb0ba73f68c}\label{_activity1_8h_a521e8bd1d48f082693027eb0ba73f68c}} 
+\#define \mbox{\hyperlink{_activity1_8h_a521e8bd1d48f082693027eb0ba73f68c}{HEATER\+\_\+\+IN}}~DDRB\&=$\sim$(1$<$$<$PB7)
+\begin{DoxyCompactList}\small\item\em A macro to set 7th bit of PORTB as input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_activity1_8h_ab2496e025c5c5f031daaa3ccf3e71719}\label{_activity1_8h_ab2496e025c5c5f031daaa3ccf3e71719}} 
+\#define \mbox{\hyperlink{_activity1_8h_ab2496e025c5c5f031daaa3ccf3e71719}{BUTTON\+\_\+\+SET}}~PORTB$\vert$=(1$<$$<$PB6)
+\begin{DoxyCompactList}\small\item\em A macro to set 6th bit of PORTB. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_activity1_8h_a27caa200a9430b9615223370a595fc1b}\label{_activity1_8h_a27caa200a9430b9615223370a595fc1b}} 
+\#define \mbox{\hyperlink{_activity1_8h_a27caa200a9430b9615223370a595fc1b}{HEATER\+\_\+\+SET}}~PORTB$\vert$=(1$<$$<$PB7)
+\begin{DoxyCompactList}\small\item\em A macro to set 7th bit of PORTB. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_activity1_8h_a2a7d461009f4440b505a587a03885117}\label{_activity1_8h_a2a7d461009f4440b505a587a03885117}} 
+\#define \mbox{\hyperlink{_activity1_8h_a2a7d461009f4440b505a587a03885117}{CHECK\+\_\+\+BUTTON\+\_\+\+ON}}~!(PINB\&(1$<$$<$PB7))
+\begin{DoxyCompactList}\small\item\em A macro to check if the button is pressed or not. If pressed, the input to 7th bit of PINB is 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_activity1_8h_af316fff0294a71247032b8881ccb39f9}\label{_activity1_8h_af316fff0294a71247032b8881ccb39f9}} 
+\#define \mbox{\hyperlink{_activity1_8h_af316fff0294a71247032b8881ccb39f9}{CHECK\+\_\+\+HEATER\+\_\+\+ON}}~!(PINB\&(1$<$$<$PB6))
+\begin{DoxyCompactList}\small\item\em A macro to check if the heater is pressed or not. If pressed, the input to 6th bit of PINB is 0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_activity1_8h_a73f890de0b072f43be318d3adc5d1679}\label{_activity1_8h_a73f890de0b072f43be318d3adc5d1679}} 
+\#define \mbox{\hyperlink{_activity1_8h_a73f890de0b072f43be318d3adc5d1679}{LED\+\_\+\+SET}}~PORTB$\vert$=(1$<$$<$PB0)
+\begin{DoxyCompactList}\small\item\em A macro to turn on the LED by setting 0th bit of PORTB. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_activity1_8h_aa6635faeeeac375fea109e1c0298f591}\label{_activity1_8h_aa6635faeeeac375fea109e1c0298f591}} 
+\#define \mbox{\hyperlink{_activity1_8h_aa6635faeeeac375fea109e1c0298f591}{LED\+\_\+\+CLR}}~PORTB\&=$\sim$(1$<$$<$PB0)
+\begin{DoxyCompactList}\small\item\em A macro to turn off the LED by clearing the 0th bit of PORTB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_activity1_8h_acd97a971162e003342b1ba2d1abccdc3}\label{_activity1_8h_acd97a971162e003342b1ba2d1abccdc3}} 
+void \mbox{\hyperlink{_activity1_8h_acd97a971162e003342b1ba2d1abccdc3}{Buttons\+\_\+\+LED\+\_\+\+Init}} ()
+\begin{DoxyCompactList}\small\item\em A function to operate the button and heater sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the headers for ativity1.\+c file. 
+
+\begin{DoxyAuthor}{Author}
+Pallavi Sharma (\href{mailto:Pallavisharma0025@gmail.com}{\texttt{ Pallavisharma0025@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/04-\/24
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
