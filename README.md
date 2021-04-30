@@ -25,6 +25,8 @@ This project is basically broken into 4 separate modules. The functionality of e
 ### Activity 4
 <img src = "Simulation/Activity4.gif" width= "900" >
 
+## Integration of all Activies
+
 ### Car seat-heater System - ON
 <img src = "Simulation/ON.gif" width= "900" >
 
