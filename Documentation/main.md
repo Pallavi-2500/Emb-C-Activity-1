@@ -1,0 +1,1 @@
+@mainpage Embedded C project for Car seat heater and temperature monitoring @subpage EmbC_main.c
